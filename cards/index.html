@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>QUT 2023</title>
+  <link rel="stylesheet" href="./style/body.css">
+  <link rel="stylesheet" href="./style/infolayout.css">
+  <link rel="stylesheet" href="./style/cards.css">
+  <link rel="stylesheet" href="./style/hero.css">
+  <link rel="stylesheet" href="./style/nav.css">
+  <link rel="stylesheet" href="./style/button.css">
+
+</head>
+
+<body>
+  <nav>
+    <div>
+      <a href="#">Logo</a>
+    </div>
+    <div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="./screens/accounts.html">Accounts</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <hero>
+    <section class="hero-image">
+      <div class="hero-content">
+        <h1>Welcome to my Website</h1>
+        <p>This is the best website ever</p>
+          <button>
+            <a class="button">Learn More</a>
+          </button>
+      </div>
+    </section>
+  </hero>
+
+  <cards>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap"rel="stylesheet'>
+
+      <div class="app">
+
+        <div class="cardList">
+          <button-arrow class="cardList__btn btn btn--left">
+            <div class="icon">
+              <svg>
+                <use xlink:href="#arrow-left"></use>
+              </svg>
+            </div>
+          </button-arrow class="cardList__btn btn btn--left">
+
+          <div class="cards__wrapper">
+
+            <div class="card current--card">
+              <div class="card__image">
+                <img src="images/clubs.jpg" alt="" />
+              </div>
+            </div>
+
+            <div class="card next--card">
+              <div class="card__image">
+                <img src="images/Law.jpg" alt="" />
+              </div>
+            </div>
+
+            <div class="card previous--card">
+              <div class="card__image">
+                <img src="images/science.jpg" alt="" />
+              </div>
+            </div>
+
+          </div>
+
+          <button-arrow class="cardList__btn btn btn--right">
+            <div class="icon">
+              <svg>
+                <use xlink:href="#arrow-right"></use>
+              </svg>
+            </div>
+          </button-arrow>
+        </div>
+
+        <div class="infoList">
+          <div class="info__wrapper">
+
+            <div class="info current--info">
+              <h1 class="text name">Clubs and Events</h1>
+              <h4 class="text location">At QUT</h4>
+              <p class="text description">Find out more</p>
+            </div>
+
+            <div class="info next--info">
+              <h1 class="text name">Find Yourself</h1>
+              <h4 class="text location">Study Law</h4>
+              <p class="text description">Find out more</p>
+            </div>
+
+            <div class="info previous--info">
+              <h1 class="text name">Make a Differnce!</h1>
+              <h4 class="text location">Study Science</h4>
+              <p class="text description">Find out more</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="app__bg">
+          <div class="app__bg__image current--image">
+            <img src="images/background.png" alt="" />
+          </div>
+          <div class="app__bg__image next--image">
+            <img src="images/background2.png" alt="" />
+          </div>
+          <div class="app__bg__image previous--image">
+            <img src="images/ba" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="loading__wrapper">
+        <div class="loader--text">Loading...</div>
+        <div class="loader">
+          <span></span>
+        </div>
+      </div>
+
+    <svg class="icons" style="display: none;">
+      <symbol id="arrow-left" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+        <polyline points='328 112 184 256 328 400'
+          style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+      </symbol>
+      <symbol id="arrow-right" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+        <polyline points='184 112 328 256 184 400'
+          style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+      </symbol>
+    </svg>
+
+    <script src='https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js'></script>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js'></script>
+    <!-- partial -->
+    <script src="./components/unicard.js"></script>
+  </cards>
+
+  <infolayout>
+    <div class="body-info"> 
+      <div class="row">
+          <div class="leftcolumn">
+            <div class="card-row">
+              <h2>START AT QUT</h2>
+              <h5>Youtube embeded example</h5>
+              <iframe width="1200" height="315" src="https://www.youtube.com/embed/Se0WjDB4M7Y?autoplay=1&loop=1&mute=1" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="card-row">
+              <h2>TITLE HEADING</h2>
+              <h5>Title description, Sep 2, 2017</h5>
+              <div class="fakeimg" style="height:200px;">Image</div>
+              <p>Some text..</p>
+              <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            </div>
+          </div>
+          <div class="rightcolumn">
+            <div class="card-row">
+              <h2>About YOU</h2>
+              <video autoplay loop muted>
+                <source src="./videos/avatar.mp4" type="video/mp4">
+              </video>
+              <p>Avatar examples..</p>
+            </div>
+            <div class="card-row">
+              <h3>Popular Post</h3>
+              <div class="fakeimg"><p>Image</p></div>
+              <div class="fakeimg"><p>Image</p></div>
+              <div class="fakeimg"><p>Image</p></div>
+            </div>
+            <div class="card-row">
+              <h3>Follow Me</h3>
+              <p>Some text..</p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </infolayout>
+
+</body>
+
+</html>
