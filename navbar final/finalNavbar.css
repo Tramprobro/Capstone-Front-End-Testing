@@ -1,0 +1,87 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.QUTnavbar{
+  height: 100vh;
+  width: 100%;
+}
+nav{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.logo img{
+  width: 150px;
+  height: 50px;
+  margin-right: 3px;
+}
+
+nav ul li{
+  list-style: non;
+  display: inline-block;
+  padding: 10px 20px;
+}
+nav ul li a{
+  color: #02021cd6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+li a i.fa-home {
+  color: rgb(9, 15, 134);
+}
+
+li a i.fa-book {
+  color: rgb(9, 15, 134);
+  border-bottom: black;
+  margin-left: 5px;
+}
+
+li a i.fa-search {
+  color: rgb(9, 15, 134);
+  border-bottom: black;
+  margin-left: 5px;
+}
+
+li a i.fa-user {
+  color: rgb(9, 15, 134);
+  border-bottom: black;
+  margin-left: 5px;
+}
+
+li a i.fa-phone {
+  color: rgb(9, 15, 134);
+  border-bottom: black;
+  margin-left: 5px;
+}
+
+
+nav ul li a:hover{
+  color: rgba(152, 156, 226, 0.729);
+  transition: .3s;
+  transform: scale(1.2);
+  cursor:pointer
+}
+button{
+  border: none;
+  background: rgb(9, 9, 161);
+  padding: 12px 30px;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  transition: .4s;
+}
+button:hover{
+  transform: scale(1.4);
+  cursor: pointer;
+
+}
